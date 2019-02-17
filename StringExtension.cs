@@ -8,6 +8,11 @@ namespace PadawansTask7
         {
             if (array==null)
                 throw new ArgumentNullException();
+            foreach (string str in array)
+            {
+                if(str==null)
+                    throw new ArgumentNullException();
+            }
             for(int i = 1; i < array.Length; i++)
             {
                 int j = i;
